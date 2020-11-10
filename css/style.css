@@ -1,0 +1,351 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color:#8B1711;
+  font-size: 18px;
+}
+
+
+
+h1{
+  font-size: 50px;
+  line-height: 1;
+  padding: 25px 0;
+  text-align: center;
+  background-color: white;
+}
+
+h2{
+  font-size: 25px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+nav li{
+  display:inline;
+  padding:10px;
+
+}
+
+nav a{
+  color: white;
+  font-weight: bold;
+  text-decoration: none; 
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+form{
+  background-color: #FAE59C;
+  text-align: center;
+}
+
+/*Your Code Here*/
+/*Write selector/rule property to add an underline when
+links in the navigation are in the hover or focus state.*/
+
+
+.skip a{
+  background-color: #8B1711;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  top:-40px;
+  /*Your code here*/
+}
+
+.header1{
+  background-color: white;
+  text-align: center;
+}
+
+
+
+.about-section{
+  background-color: #FAE59C;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.about-section img{
+  padding: 15px;
+  margin-left: 65px;
+  height: 175px;
+  width: 289px;
+}
+
+
+.about-section p{
+  padding: 15px;
+}
+
+.skip a:focus{
+  top: 0px
+}
+
+*:focus{
+  border: solid 2px;
+}
+
+
+
+nav{
+  background-color: #8B1711;
+  padding: 25px 0; 
+  text-align: center;
+}
+
+.current{
+  text-decoration: underline;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  padding: 30px 30px 30px 30px;
+  text-align: center;
+}
+
+
+.gallery{
+  min-height: 600px;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.gallery > img{
+  border: 10px #8B1711 solid;
+  margin: 10px;
+  width: 300px;
+}
+
+
+#logo{
+  width: 250px;
+  height: auto;
+  padding: 20px;
+  padding-left:100px;
+  position: absolute;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  row-gap: 15px;
+}
+
+header{
+  background-attachment: fixed; /* Parallax effect */     
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  color: #8B1711;
+  height: 400px;                /* Parallax effect */
+
+  /*Your Code Here*/
+  /*Set background-image to header.jpg */
+  background-image: url("../images/banner.PNG");
+
+  grid-column: 1 / -1;  /*Can you explain what this does?*/
+  grid-row: 1 / auto;   /*Can you rewrite it?*/
+}
+
+header p{
+  color: #8B1711;
+  font-size: 24px;
+  padding: 0 100px;
+  text-align: center;
+}
+
+#contact-header {
+  background-color: white;
+  padding: 15px;
+}
+
+
+label{
+  display: inline;
+  margin-right:10px;
+  width:10%;
+  padding-top: 20px;
+}
+
+input {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+span{
+  
+  font-family: italic;
+  font-weight: bold;
+}
+
+textarea{
+  width: 80%;
+  height: 35vh;
+  padding: 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+
+input[type=submit] {
+  background-color: #38803C;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+.photos{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto auto;
+  row-gap: 15px;
+  column-gap: 15px;
+  align-content: center;
+  padding-left:25px;
+  background-color: #FAE59C;
+}
+
+.hiring-section{
+  background-color: white;
+  padding: 15px;
+}
+
+
+.specials{
+  display: grid;
+  background-color: white;
+  grid-template-columns: auto auto auto;
+  grid-template-rows:auto auto;
+  row-gap: 20px;
+  column-gap: 15px;
+}
+
+
+.house-specials{
+  padding:20px;
+  background-color: white;
+}
+
+
+
+.house-specials img{
+  width: 50px;
+  height:auto;
+ 
+}
+
+#menu-headers{
+  background-color: #FAE59C;
+}
+
+#items{
+  background-color: white;
+}
+
+.drinks{
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  padding: 15px;
+  
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (min-width: 770px) {
+  form{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  input{
+    width:80%;
+  }
+
+  textarea{
+    width:80%;
+    height: 25vh;
+ }
+ 
+ div + label{
+    line-height: 25vh;
+    vertical-align:top;
+ }
+}
+
+
+@media all and (min-width: 800px){
+  nav{
+    padding: 30px 0px;
+    text-align: right;
+    vertical-align: middle;
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: 50px auto 500px auto 50px;
+    grid-template-rows: 400px 400px 400px 400px 400px;
+  }
+
+  .about, .clients, .method-image, .contact-image{
+    grid-column: 3 / span 2;
+  }
+
+  .about-image, .clients-image, .method, .contact{
+    grid-column: 2 / span 2;
+  }
+}
+
+/*You do not need to modify any code below this line.
+It is included for accessibility to turn off animations
+and movement for people who have modified their 
+preferences to reduce motion.*/
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    -webkit-transition: none; /* sets to default setting */
+    transition: none;        /* sets to default setting */
+   }
+
+  /*Turn off parallax*/
+  header{
+    background-attachment: initial;
+  }
+}
