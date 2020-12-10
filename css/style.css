@@ -143,7 +143,8 @@ footer{
 .gallery > img{
   border: 10px #8B1711 solid;
   margin: 10px;
-  width: 300px;
+  min-width: 300px;
+  
 }
 
 
@@ -245,10 +246,10 @@ input[type=submit]:hover {
   row-gap: 15px;
   column-gap: 15px;
   align-content: center;
-  padding-left: 30px;
   background-color: white;
   position: relative;
-  
+  top: 0px; right: 0px; left: 0px; bottom: 0px;
+ 
   
 }
 
@@ -346,7 +347,7 @@ input[type=submit]:hover {
   width: 250px;
   position: absolute;
   margin: 0 auto;
-  top: 25%;
+  top: 33%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
@@ -476,7 +477,7 @@ form{
   width: 250px;
   position: absolute;
   margin: 0 auto;
-  top: 25%;
+  top: 33%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
