@@ -249,7 +249,6 @@ input[type=submit]:hover {
   align-content: center;
   background-color: white;
   position: relative;  
-  padding-left: 15px;
 }
 
 .hiring-section{
@@ -470,7 +469,7 @@ form{
 
 
 
-@media all and (min-width: 1500px){
+@media all and (min-width: 1000px){
   
   #logo{
   width: 250px;
