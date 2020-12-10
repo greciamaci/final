@@ -247,9 +247,9 @@ input[type=submit]:hover {
   row-gap: 15px;
   column-gap: 15px;
   align-content: center;
-  padding-left: 30px;
   background-color: white;
   position: relative;  
+  padding-left: 15px;
 }
 
 .hiring-section{
@@ -346,7 +346,7 @@ input[type=submit]:hover {
   width: 250px;
   position: absolute;
   margin: 0 auto;
-  top: 33%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
@@ -476,7 +476,7 @@ form{
   width: 250px;
   position: absolute;
   margin: 0 auto;
-  top: 33%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
