@@ -153,7 +153,7 @@ footer{
   width: 250px;
   position: absolute;
   margin: 0 auto;
-  top: 33%;
+  top: 23%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
@@ -242,13 +242,12 @@ input[type=submit]:hover {
 
 .photos{
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 70%;
   grid-template-rows: auto auto auto auto auto auto;
   row-gap: 15px;
   column-gap: 15px;
   align-content: center;
-  background-color: white;
-  position: relative;  
+  background-color: white;  
 }
 
 .hiring-section{
@@ -345,7 +344,7 @@ input[type=submit]:hover {
   width: 250px;
   position: absolute;
   margin: 0 auto;
-  top: 20%;
+  top: 23%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
@@ -475,7 +474,7 @@ form{
   width: 250px;
   position: absolute;
   margin: 0 auto;
-  top: 20%;
+  top: 23%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
