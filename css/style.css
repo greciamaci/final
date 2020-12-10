@@ -3,7 +3,7 @@ html{
 }
 
 body{
-  background-color:#8B1711;
+  background-color:#ffffff;
   font-size: 18px;
 }
 
@@ -42,24 +42,32 @@ a:hover {
 form{
   background-color: #FAE59C;
   text-align: center;
+  margin: 15px;
 }
+
 
 /*Your Code Here*/
 /*Write selector/rule property to add an underline when
 links in the navigation are in the hover or focus state.*/
 
 
-.skip a{
-  background-color: #8B1711;
+a.skip{
+  background: #8B1711;
   left: 0;
   padding: 6px;
+  position: absolute;
+  top: -40px;
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
-  position: absolute;
-  top:-40px;
-  /*Your code here*/
 }
+
+a.skip:focus{
+  top:20px;
+  color: white;
+  text-decoration-style: solid;
+}
+
 
 .header1{
   background-color: white;
@@ -69,17 +77,22 @@ links in the navigation are in the hover or focus state.*/
 
 
 .about-section{
+  width: 100%;
+  height: 100%;
   background-color: #FAE59C;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
 }
 
 .about-section img{
-  padding: 15px;
-  margin-left: 65px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+  position: relative;
+  top: 0; left: 0; bottom: 0; right: 0;
   height: 175px;
   width: 289px;
 }
@@ -89,9 +102,7 @@ links in the navigation are in the hover or focus state.*/
   padding: 15px;
 }
 
-.skip a:focus{
-  top: 0px
-}
+
 
 *:focus{
   border: solid 2px;
@@ -118,13 +129,15 @@ footer{
 
 
 .gallery{
-  min-height: 600px;
   display: flex;
   flex-wrap: wrap; 
   justify-content: center;
   align-content: center;
   padding-top: 15px;
   padding-bottom: 15px;
+  position: relative;
+  top: 0; left: 0; bottom: 0; right: 0;
+
 }
 
 .gallery > img{
@@ -136,18 +149,15 @@ footer{
 
 #logo{
   width: 250px;
-  height: auto;
-  padding: 20px;
-  padding-left:100px;
   position: absolute;
+  margin: 0 auto;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
 }
 
-.container{
-  display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: auto auto auto auto auto;
-  row-gap: 15px;
-}
+
 
 header{
   background-attachment: fixed; /* Parallax effect */     
@@ -177,6 +187,9 @@ header p{
   padding: 15px;
 }
 
+legend{
+  text-align: center;
+} 
 
 label{
   display: inline;
@@ -232,8 +245,11 @@ input[type=submit]:hover {
   row-gap: 15px;
   column-gap: 15px;
   align-content: center;
-  padding-left:25px;
-  background-color: #FAE59C;
+  padding-left: 30px;
+  background-color: white;
+  position: relative;
+  
+  
 }
 
 .hiring-section{
@@ -241,6 +257,19 @@ input[type=submit]:hover {
   padding: 15px;
 }
 
+.career_p{
+  background-color: #FAE59C;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.career_p > p{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 15px;
+}
 
 .specials{
   display: grid;
@@ -284,6 +313,14 @@ input[type=submit]:hover {
   
 }
 
+.map{
+  display: flex;
+  justify-content: center;
+  vertical-align: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (min-width: 770px) {
   form{
@@ -304,29 +341,279 @@ input[type=submit]:hover {
     line-height: 25vh;
     vertical-align:top;
  }
+
+ #logo{
+  width: 250px;
+  position: absolute;
+  margin: 0 auto;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+nav{
+  padding: 30px 0px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 
-@media all and (min-width: 800px){
+.about-section{
+  background-color: #FAE59C;
+  display: grid;
+  grid-template-columns: auto 500px;
+  grid-template-rows: 30px auto;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+
+.about-section img{
+  padding: 15px;
+  margin-left: 65px;
+  height: 175px;
+  width: 289px;
+  grid-column: 1 / span 1;
+}
+
+#about-section-header{
+  text-align: left;
+  grid-column: 2 / span 1;
+  padding-left: 15px
+
+}
+
+.about-section p{
+  padding: 15px;
+  grid-column: 2 / span 1;
+  text-align: left;
+  
+}
+
+.photo_container{
+  background-color: #ffffff;
+  padding-top: 50px;
+}
+
+.photos{
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 500px 500px 500px;
+  grid-template-rows: 50px 50px;
+  row-gap: 250px;
+  padding-left: 280px;
+  padding-bottom: 280px;
+  
+  
+}
+
+.photos > img{
+  width: 300px;
+  height: 250px;
+  
+}
+
+.career_p{
+  background-color: #FAE59C;
+  padding: 50px;
+}
+
+.career_p > p{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+form{
+  margin-bottom: 50px;
+}
+
+
+
+
+.map{
+  display: flex;
+  justify-content: center;
+  vertical-align: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.specials{
+  display: grid;
+  background-color: white;
+  grid-template-columns: 20px auto 30px;
+  grid-template-rows:auto auto;
+  column-gap:90px;
+}
+
+
+.house-specials{
+  padding:50px;
+  background-color: white;
+}
+
+
+
+.house-specials img{
+  width: 50px;
+  height:auto;
+ 
+}
+
+
+
+}
+
+
+
+@media all and (min-width: 1500px){
+  
+  #logo{
+  width: 250px;
+  position: absolute;
+  margin: 0 auto;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+    
+  }
+  
   nav{
     padding: 30px 0px;
-    text-align: right;
+    text-align: center;
     vertical-align: middle;
   }
 
-  .container{
+
+  .about-section{
+    background-color: #FAE59C;
     display: grid;
-    grid-template-columns: 50px auto 500px auto 50px;
-    grid-template-rows: 400px 400px 400px 400px 400px;
+    grid-template-columns: auto 500px;
+    grid-template-rows: 30px auto;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin-top: 15px;
+  }
+  
+
+  .about-section img{
+    padding: 15px;
+    margin-left: 65px;
+    height: 175px;
+    width: 289px;
+    grid-column: 1 / span 1;
   }
 
-  .about, .clients, .method-image, .contact-image{
-    grid-column: 3 / span 2;
+  #about-section-header{
+    text-align: left;
+    grid-column: 2 / span 1;
+    padding-left: 15px
+
+  }
+  
+  .about-section p{
+    padding: 15px;
+    grid-column: 2 / span 1;
+    text-align: left;
+    
   }
 
-  .about-image, .clients-image, .method, .contact{
-    grid-column: 2 / span 2;
+  .photo_container{
+    background-color: #ffffff;
+    padding-top: 50px;
   }
+
+  .photos{
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    grid-template-rows: 50px 50px;
+    row-gap: 250px;
+    padding-left: 280px;
+    padding-bottom: 280px;
+    
+    
+  }
+
+  .photos > img{
+    width: 300px;
+    height: 250px;
+    background-color: #ffffff;
+  }
+
+  .career_p{
+    background-color: #FAE59C;
+    padding: 50px;
+  }
+
+  .career_p > p{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  form{
+    margin-bottom: 50px;
+  }
+
+  .specials{
+    display: grid;
+    background-color: white;
+    grid-template-columns: 500px auto 580px;
+    grid-template-rows:auto auto;
+  }
+  
+  
+  .house-specials{
+    padding:50px;
+    background-color: white;
+  }
+  
+  
+  
+  .house-specials img{
+    width: 50px;
+    height:auto;
+    padding-left: 400px
+   
+  }
+  
+  #menu-headers{
+    background-color: #FAE59C;
+  }
+  
+  #items{
+    background-color: white;
+  }
+  
+  .drinks{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+    justify-content: space-around;
+    padding-left: 700px;
+    padding-right: 700px;
+    text-align: center;
+  }
+
+  .map{
+    display: flex;
+    justify-content: center;
+    vertical-align: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  
 }
 
 /*You do not need to modify any code below this line.
@@ -342,10 +629,14 @@ preferences to reduce motion.*/
   .skip a{
     -webkit-transition: none; /* sets to default setting */
     transition: none;        /* sets to default setting */
+    color: white;
    }
 
   /*Turn off parallax*/
   header{
     background-attachment: initial;
   }
+
+  
+
 }
