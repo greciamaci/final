@@ -153,7 +153,7 @@ footer{
   width: 250px;
   position: absolute;
   margin: 0 auto;
-  top: 23%;
+  top: 33%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
@@ -408,7 +408,7 @@ nav{
 }
 
 .photos > img{
-  width: 300px;
+  width: 250px;
   height: 250px;
   
 }
