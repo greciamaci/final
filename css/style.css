@@ -345,7 +345,7 @@ input[type=submit]:hover {
   width: 250px;
   position: absolute;
   margin: 0 auto;
-  top: 25%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
@@ -475,7 +475,7 @@ form{
   width: 250px;
   position: absolute;
   margin: 0 auto;
-  top: 25%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
