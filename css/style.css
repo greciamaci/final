@@ -5,6 +5,7 @@ html{
 body{
   background-color:#ffffff;
   font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -87,15 +88,14 @@ a.skip:focus{
   flex-wrap: wrap;
 }
 
-.about-section img{
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: auto;
-  position: relative;
-  top: 0; left: 0; bottom: 0; right: 0;
-  height: 175px;
-  width: 289px;
+#owner{
+height: 175px;
+width: 289px;
+margin: auto;
+position: relative;
+top: 0; left: 0; bottom: 0; right: 0;
 }
+
 
 
 .about-section p{
@@ -148,6 +148,17 @@ footer{
   
 }
 
+@-webkit-keyframes logo_wiggle{
+  from {width: 25px}
+  to {width: 250px}
+
+}
+
+@keyframes logo_wiggle{
+  from {width: 25px}
+  to {width: 250px}
+
+} 
 
 #logo{
   width: 250px;
@@ -157,9 +168,61 @@ footer{
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
+  animation-name: logo_wiggle;
+  -webkit-animation-name: logo_wiggle;
+  animation-duration: 3s;
+}
+
+.flip-card{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.flip-card-inner {
+  position: relative;
+  height: 175px;
+  width: 289px;
+  text-align: center;
+  vertical-align: middle;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* horizontal flip */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-inner:focus {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  height: 175px;
+  width: 289px;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
 }
 
 
+/* Style the back side */
+.flip-card-back {
+  background-color: #ffffff;
+  color:black;
+  transform: rotateY(180deg);
+}
+
+h6{
+  padding-top: 15px;
+}
 
 header{
   background-attachment: fixed; /* Parallax effect */     
@@ -193,6 +256,7 @@ legend{
   vertical-align: middle;
   padding-top: 30px;
   text-align: center;
+  padding-top: 15px;
 } 
 
 label{
@@ -371,8 +435,7 @@ nav{
 
 
 .about-section img{
-  padding: 15px;
-  margin-left: 65px;
+
   height: 175px;
   width: 289px;
   grid-column: 1 / span 1;
@@ -502,8 +565,7 @@ form{
   
 
   .about-section img{
-    padding: 15px;
-    margin-left: 65px;
+ 
     height: 175px;
     width: 289px;
     grid-column: 1 / span 1;
