@@ -40,7 +40,7 @@ a:hover {
   text-decoration: underline;
 }
 
-form{
+fieldset{
   background-color: #FAE59C;
   text-align: center;
   margin: 15px;
@@ -387,7 +387,8 @@ input[type=submit]:hover {
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (min-width: 770px) {
-  form{
+  fieldset{
+    text-align: center;
     width: 80%;
     margin: 0 auto;
   }
@@ -490,7 +491,7 @@ nav{
   flex-wrap: wrap;
 }
 
-form{
+fieldset{
   margin-bottom: 50px;
 }
 
@@ -620,7 +621,7 @@ form{
     flex-wrap: wrap;
   }
 
-  form{
+  fieldset{
     margin-bottom: 50px;
   }
 
