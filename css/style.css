@@ -307,13 +307,14 @@ input[type=submit]:hover {
 }
 
 .photos{
-  display: grid;
-  grid-template-columns: 70%;
-  grid-template-rows: auto auto auto auto auto auto;
-  row-gap: 15px;
-  column-gap: 15px;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
   align-content: center;
-  background-color: white;  
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  top: 0; left: 0; bottom: 0; right: 0;  
 }
 
 .hiring-section{
@@ -462,20 +463,22 @@ nav{
 }
 
 .photos{
-  background-color: #ffffff;
-  display: grid;
-  grid-template-columns: 500px 500px 500px;
-  grid-template-rows: 50px 50px;
-  row-gap: 250px;
-  padding-left: 280px;
-  padding-bottom: 280px;
-  
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  top: 0; left: 0; bottom: 0; right: 0;
   
 }
 
 .photos > img{
   width: 250px;
   height: 250px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   
 }
 
@@ -592,13 +595,15 @@ fieldset{
   }
 
   .photos{
-    background-color: #ffffff;
-    display: grid;
-    grid-template-columns: 500px 500px 500px;
-    grid-template-rows: 50px 50px;
-    row-gap: 250px;
-    padding-left: 280px;
-    padding-bottom: 280px;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  align-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  top: 0; left: 0; bottom: 0; right: 0;
+
     
     
   }
@@ -625,11 +630,32 @@ fieldset{
     margin-bottom: 50px;
   }
 
+  
+  
+  .menu-headers{
+    background-color: #FAE59C;
+  }
+  
+  #items{
+    background-color: white;
+  }
+  
+ 
+
+  .map{
+    display: flex;
+    justify-content: center;
+    vertical-align: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
   .specials{
     display: grid;
     background-color: white;
-    grid-template-columns: 500px auto 580px;
+    grid-template-columns: 20px auto 30px;
     grid-template-rows:auto auto;
+    column-gap:90px;
   }
   
   
@@ -643,39 +669,8 @@ fieldset{
   .house-specials img{
     width: 50px;
     height:auto;
-    padding-left: 400px
    
   }
-  
-  .menu-headers{
-    background-color: #FAE59C;
-  }
-  
-  #items{
-    background-color: white;
-  }
-  
-  .drinks{
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    padding: 50px;
-    justify-content: space-around;
-    padding-left: 700px;
-    padding-right: 700px;
-    text-align: center;
-  }
-
-  .map{
-    display: flex;
-    justify-content: center;
-    vertical-align: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  
   
 }
 
