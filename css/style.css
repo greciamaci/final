@@ -221,7 +221,7 @@ footer{
   transform: rotateY(180deg);
 }
 
-h6{
+.flip-card-back > p{
   padding-top: 15px;
 }
 
@@ -358,7 +358,7 @@ input[type=submit]:hover {
  
 }
 
-#menu-headers{
+.menu-headers{
   background-color: #FAE59C;
 }
 
@@ -647,7 +647,7 @@ fieldset{
    
   }
   
-  #menu-headers{
+  .menu-headers{
     background-color: #FAE59C;
   }
   
