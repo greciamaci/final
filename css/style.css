@@ -44,6 +44,7 @@ fieldset{
   background-color: #FAE59C;
   text-align: center;
   margin: 15px;
+  padding-top: 15px;
 }
 
 
@@ -53,7 +54,7 @@ links in the navigation are in the hover or focus state.*/
 
 
 a.skip{
-  background: #8B1711;
+  background: white;
   left: 0;
   padding: 6px;
   position: absolute;
@@ -65,7 +66,7 @@ a.skip{
 
 a.skip:focus{
   top:20px;
-  color: white;
+  color: black;
   text-decoration-style: solid;
 }
 
@@ -254,7 +255,6 @@ header p{
 
 legend{
   vertical-align: middle;
-  padding-top: 30px;
   text-align: center;
   padding-top: 15px;
 } 
@@ -700,6 +700,8 @@ preferences to reduce motion.*/
     background-attachment: initial;
   }
 
-  
+  #logo{
+    animation: none;
+  }
 
 }
